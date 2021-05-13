@@ -272,8 +272,14 @@ d[0,0] = 9999
 #
 # 应用广播法则之后，所有数组的大小必须匹配。
 
-
-
+a = arange(10)
+max = -float("inf")
+count = 0
+for i in range(len(a)):
+    if max<a[i]:
+        max= a[i]
+        count+=1
+        print(count)
 
 
 
